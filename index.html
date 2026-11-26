@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#100b16">
+<title>Для тебя, моя любимая ❤️</title>
+<style>
+:root{--bg:#100b16;--pink:#f2a9c8;--soft:#f7e8ef;--muted:#c9b7c7;--card:rgba(255,255,255,.065)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(ellipse at 50% 0%,#392039 0%,#1a1020 38%,var(--bg) 75%);color:var(--soft);font-family:Georgia,"Times New Roman",serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.42;background-image:radial-gradient(1px 1px at 12% 18%,#fff 98%,transparent),radial-gradient(2px 2px at 78% 24%,#f6c4db 98%,transparent),radial-gradient(1px 1px at 38% 72%,#fff 98%,transparent),radial-gradient(1px 1px at 88% 82%,#fff 98%,transparent),radial-gradient(1px 1px at 58% 44%,#f6c4db 98%,transparent);background-size:240px 240px}
+main{width:min(760px,100%);margin:auto;padding:28px 18px 80px;position:relative}
+.center{text-align:center}
+.kicker{letter-spacing:.22em;text-transform:uppercase;font:11px Arial,sans-serif;color:#d9a9c4}
+h1,h2,p{font-weight:400}
+h1{font-size:clamp(38px,9vw,68px);line-height:1.04;margin:16px 0;color:#ffeaf3;text-shadow:0 0 35px #ef9bc455}
+h2{font-size:clamp(27px,6vw,40px);color:#ffd9e9;line-height:1.15;margin:0 0 18px}
+p{font-size:clamp(17px,4vw,20px);line-height:1.8;color:#eadde7}
+.small{font:13px/1.6 Arial,sans-serif;color:var(--muted)}
+button,.music-link{border:1px solid #e9a8c6aa;background:linear-gradient(135deg,#7d4267,#42233f);color:#fff4f8;border-radius:999px;padding:15px 24px;font-size:15px;cursor:pointer;text-decoration:none;display:inline-block;box-shadow:0 8px 30px #0005;transition:.25s}
+button:hover,.music-link:hover{transform:translateY(-2px);box-shadow:0 12px 36px #e58db533}
+.hero{min-height:92vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.hero .heart{font-size:42px;filter:drop-shadow(0 0 18px #f7a9ce);animation:pulse 2s infinite}
+@keyframes pulse{50%{transform:scale(1.12)}}
+.photo-wrap{margin:26px auto 14px;padding:9px;border:1px solid #f3bdd455;border-radius:22px;background:linear-gradient(135deg,#ffffff18,#ffffff03);box-shadow:0 18px 55px #0008;max-width:520px}
+.photo-wrap img{display:block;width:100%;height:auto;max-height:690px;object-fit:cover;border-radius:15px}
+.caption{font-style:italic;color:#e7bfd2;font-size:17px;text-align:center;margin:15px 10px 0}
+section{padding:64px 0 20px}
+.card{padding:26px 23px;border:1px solid #f0c5dc26;border-radius:22px;background:var(--card);backdrop-filter:blur(8px);box-shadow:0 15px 45px #0003}
+.letter p{margin:0 0 19px}
+.divider{width:70px;height:1px;background:#e9a8c6;margin:32px auto;opacity:.7}
+.final{padding:54px 20px 30px;text-align:center}
+.final h2{font-size:clamp(34px,8vw,52px);text-shadow:0 0 30px #ef9bc455}
+.music{position:fixed;right:14px;bottom:14px;z-index:5}
+.music a{font:13px Arial,sans-serif;padding:12px 16px;background:#2a192bdf;border-color:#e9a8c677}
+.hidden{display:none!important}
+.fade{animation:fade .9s ease both}
+@keyframes fade{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:none}}
+footer{padding:30px 0 0;text-align:center;color:#9d879b;font:12px Arial,sans-serif}
+@media(max-width:480px){main{padding-left:14px;padding-right:14px}.card{padding:22px 18px}.music{right:10px;bottom:10px}}
+</style>
+</head>
+<body>
+<main>
+  <div class="hero" id="start">
+    <div class="heart">♡</div>
+    <div class="kicker">для самой дорогой</div>
+    <h1>Моей любимой</h1>
+    <p class="small">У меня есть кое-что, что я давно хочу сказать тебе…</p>
+    <button id="openBtn">Открыть моё сердце</button>
+    <p class="small" style="margin-top:16px">❤️</p>
+  </div>
+
+  <div id="story" class="hidden">
+    <section class="center fade">
+      <div class="kicker">один из моих любимых моментов</div>
+      <div class="photo-wrap"><img src="assets/our-photo.jpg" alt="Наша фотография"></div>
+      <div class="caption">«Если бы меня спросили, где мне было хорошо, я бы показал этот момент».</div>
+    </section>
+
+    <section class="fade">
+      <div class="center"><div class="kicker">от всего сердца</div><h2>Прости меня</h2></div>
+      <div class="card letter">
+        <p>Я даже не знаю, с чего правильно начать. Наверное, с самого главного — прости меня.</p>
+        <p>Прости за то, что я не слышал тебя тогда, когда ты больше всего хотела быть услышанной. За то, что порой не пытался понять, что происходит у тебя внутри. За то, что мог думать о своих переживаниях, забывая о твоих.</p>
+        <p>Мне жаль, что иногда я становился для тебя дополнительной тяжестью. У меня есть свои сложности, и мне никогда не хотелось, чтобы ты чувствовала, будто должна нести всё это на своих плечах.</p>
+        <p>Я очень хочу научиться быть не тем, от кого тебе нужно отдыхать, а тем, рядом с кем тебе спокойно.</p>
+      </div>
+    </section>
+
+    <section class="fade">
+      <div class="center"><div class="kicker">самое тёплое, что есть во мне</div><h2>Я люблю тебя</h2></div>
+      <div class="card letter">
+        <p>Знаешь, я никогда ещё не чувствовал себя настолько хорошо рядом с человеком. Мне нравилось просто находиться с тобой, обнимать тебя, смотреть на тебя, смеяться вместе, заниматься какой-нибудь ерундой.</p>
+        <p>Даже самые обычные моменты рядом с тобой становились для меня чем-то особенным.</p>
+        <p>Я хочу быть рядом. Хочу греть тебя своей любовью, заботиться о тебе, радовать тебя, обнимать после тяжёлого дня и чувствовать, что моя любовь возвращается ко мне.</p>
+        <p>Я не прошу тебя забыть всё плохое одним днём и не хочу, чтобы ты чувствовала себя обязанной отвечать мне взаимностью. Я просто хочу, чтобы ты знала, насколько ты мне дорога.</p>
+        <p>Я хочу меняться не только на словах. Хочу учиться слышать тебя, замечать твои чувства и доказывать заботу поступками — не обещаниями.</p>
+      </div>
+    </section>
+
+    <section class="final fade">
+      <div class="divider"></div>
+      <div class="heart">♡</div>
+      <h2>Спасибо, что ты есть</h2>
+      <p>Я не знаю, что ждёт нас впереди. Но я знаю, что всё тепло, которое ты подарила мне, навсегда останется в моём сердце.</p>
+      <p>Ты невероятно дорога мне.</p>
+      <h2 style="margin-top:28px">Я очень сильно тебя люблю.</h2>
+      <div class="small" style="margin-top:16px">От всего сердца. ❤️</div>
+    </section>
+    <footer>Эта история написана искренне и только для тебя.</footer>
+  </div>
+</main>
+<div class="music">
+  <button class="music-link" id="musicToggle" type="button" aria-label="Выключить музыку">♫ Музыка: включена</button>
+</div>
+<audio id="ourSong" src="assets/our-song.mp3" preload="auto" loop></audio>
+<script>
+const openBtn=document.getElementById('openBtn');
+const story=document.getElementById('story');
+const song = document.getElementById('ourSong');
+const musicToggle = document.getElementById('musicToggle');
+let musicOn = true;
+
+openBtn.addEventListener('click', async ()=>{
+  story.classList.remove('hidden');
+  document.getElementById('start').style.display='none';
+  window.scrollTo({top:0,behavior:'smooth'});
+  setTimeout(()=>story.scrollIntoView({behavior:'smooth',block:'start'}),120);
+  try {
+    await song.play();
+    musicOn = true;
+    musicToggle.textContent = '♫ Музыка: включена';
+    musicToggle.setAttribute('aria-label','Выключить музыку');
+  } catch (e) {
+    musicOn = false;
+    musicToggle.textContent = '♫ Включить музыку';
+    musicToggle.setAttribute('aria-label','Включить музыку');
+  }
+});
+
+musicToggle.addEventListener('click', async ()=>{
+  if (musicOn) {
+    song.pause();
+    musicOn = false;
+    musicToggle.textContent = '♫ Включить музыку';
+    musicToggle.setAttribute('aria-label','Включить музыку');
+  } else {
+    try {
+      await song.play();
+      musicOn = true;
+      musicToggle.textContent = '♫ Музыка: включена';
+      musicToggle.setAttribute('aria-label','Выключить музыку');
+    } catch (e) {
+      musicToggle.textContent = '♫ Не удалось включить';
+    }
+  }
+});
+</script>
+</body>
+</html>
